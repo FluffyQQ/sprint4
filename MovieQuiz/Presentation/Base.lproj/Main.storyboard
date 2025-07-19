@@ -115,6 +115,9 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="large" color="whiteColor" translatesAutoresizingMaskIntoConstraints="NO" id="activityIndicator">
+                                <rect key="frame" x="197" y="428" width="40" height="40"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oQE-fi-n9f"/>
                         <color key="backgroundColor" name="ypBlack"/>
@@ -123,6 +126,8 @@
                             <constraint firstItem="H8w-Tv-Usi" firstAttribute="top" secondItem="oQE-fi-n9f" secondAttribute="top" constant="10" id="aXB-GJ-xPl"/>
                             <constraint firstItem="oQE-fi-n9f" firstAttribute="trailing" secondItem="H8w-Tv-Usi" secondAttribute="trailing" constant="20" id="aur-Du-Ux8"/>
                             <constraint firstItem="H8w-Tv-Usi" firstAttribute="leading" secondItem="oQE-fi-n9f" secondAttribute="leading" constant="20" id="kq2-CG-CGG"/>
+                            <constraint firstItem="activityIndicator" firstAttribute="centerX" secondItem="iNt-ec-W4b" secondAttribute="centerX" id="centerX-activityIndicator"/>
+                            <constraint firstItem="activityIndicator" firstAttribute="centerY" secondItem="iNt-ec-W4b" secondAttribute="centerY" id="centerY-activityIndicator"/>
                         </constraints>
                     </view>
                     <connections>
@@ -131,6 +136,7 @@
                         <outlet property="noButton" destination="wgf-fx-kgQ" id="7pF-DL-Fct"/>
                         <outlet property="textLabel" destination="p9o-hR-OM7" id="tmf-mu-6uU"/>
                         <outlet property="yesButton" destination="cis-86-yDb" id="YSx-t6-bsu"/>
+                        <outlet property="activityIndicator" destination="activityIndicator" id="outlet-activityIndicator"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gs-Mn-NiJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
